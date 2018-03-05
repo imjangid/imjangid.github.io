@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prectical Solution</title>
+    <link rel="stylesheet" href="prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+     		<style>
+		@keyframes image{
+			0%{margin-top: 0vw;}
+			100%{margin-top: 10vw;}
+		}
+		img{
+            width: 100px;
+            height: auto;
+			animation: image 1s infinite alternate;
+		}
+		</style>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 99%;
+        }
+
+        #left {
+            float: left;
+            font-size: 10vw;
+            width: 50%;
+            height: 100%;
+
+        }
+
+        #right {
+            float: right;
+            width: 50%;
+            height: 100%;
+        }
+
+        #heading {
+            font-family: "Raleway";
+            font-size: 2vw;
+            text-align: center;
+            background-color: gold;
+            color: black;
+            font-weight: 500;
+        }
+
+        #top {
+            background-color: #80ced6;
+            font-size: 3vw;
+            color: antiquewhite;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        Image Position
+    </div>
+    <div id="right">
+        <div id="heading">
+             Code
+
+        </div>
+
+        <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Image Position&lt;/title&gt;
+         &lt;style&gt;
+        @keyframes image{
+            0%{margin-top: 0vw;}
+            100%{margin-top: 10vw;}
+        }
+        img{
+            animation: image 1s infinite alternate;
+        }
+        &lt;/style&gt;
+     &lt;/head&gt;
+    &lt;body&gt;
+        &lt;img src="https://smartblogger.com/wp-content/uploads/2014/03/twitter-logo-blue.png"&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div id="left">
+        <div id="heading">
+            Output
+
+        </div>
+     <img src="https://smartblogger.com/wp-content/uploads/2014/03/twitter-logo-blue.png">
+  
+
+
+    </div>
+     <script src="prism.js"></script>
+</body>
+</html>

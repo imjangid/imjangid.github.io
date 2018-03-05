@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prectical Solution</title>
+    <link rel="stylesheet" href="prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 99%;
+        }
+
+        #left {
+            float: left;
+            font-size: 8vw;
+            width: 50%;
+            height: 100%;
+
+        }
+
+        #right {
+            float: right;
+            width: 50%;
+            height: 100%;
+        }
+
+        #heading {
+            font-family: "Raleway";
+            font-size: 2vw;
+            text-align: center;
+            background-color: gold;
+            color: black;
+            font-weight: 500;
+        }
+
+        #top {
+            background-color: #80ced6;
+            font-size: 3vw;
+            color: antiquewhite;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+       Employee Class
+    </div>
+    <div id="right">
+        <div id="heading">
+             Code
+
+        </div>
+
+        <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Employee Class&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script&gt;
+    function Employee(Id,Name) {
+        this.name = Name;
+        this.id = Id;}
+    var array = {};
+    array[0] =new Employee(1,"Chandrakant");
+    array[1] =new Employee(2,"Ashish");
+    array[2] =new Employee(3,"Karan");
+    for (i in array){
+        document.write(array[i].id,array[i].name,"&lt;br&gt;");
+    }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div id="left">
+        <div id="heading">
+            Output
+
+        </div>
+    </div>
+    <script>
+	function Employee(Id,Name) {
+		this.name = Name;
+		this.id = Id;
+	}
+	var array = {};
+	array[0] =new Employee(1,"Chandrakant");
+	array[1] =new Employee(2,"Ashish");
+	array[2] =new Employee(3,"Karan");
+
+	for (i in array){
+	
+		document.getElementById("left").innerHTML +=  array[i].id + array[i].name + "<br>";
+	}
+	
+</script>
+     <script src="prism.js"></script>
+</body>
+</html>

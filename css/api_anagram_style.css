@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
+
+* {
+    margin: 0 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.back {
+    height: 100%;
+    background-color: #24ECFF;
+}
+
+.font-box {
+    border-radius: 5px;
+    display: inline-block;
+    background-color: black;
+    margin-left: 0.5vw;
+    margin-top: 2vh;
+    width: 4vw;
+    height: 4vw;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.font {
+    transform: translate(0, -0.6vw);
+    color: white;
+    font-size: 4vw;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    text-shadow: 1px 1px 2px gray;
+
+}
+
+.words {
+
+    text-align: center;
+    display: inline-flex;
+    margin-left: 2vw;
+
+}
+
+.words:hover {
+    color: white;
+    font-size: 5vw;
+}
+
+.match {
+
+    display: block;
+    width: 100%;
+    position: absolute;
+    margin-top: 30vh;
+}
+
+.input {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    margin-top: 10vh;
+    margin-left: 50%;
+}
+
+.input_ {
+    font-size: 4vw;
+    border: 0;
+    box-shadow: 0.5px 0.5px 4px #1A2535;
+    background-color: #24ECFF;
+    color: #FFDCFF;
+    text-align: center;
+}
+
+.input_:hover {
+    box-shadow: 2px 2px 10px #1A2535;
+}
+.input_:focus {
+    background-color: white;
+    color:black;
+}

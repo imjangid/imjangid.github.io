@@ -41,6 +41,31 @@
             text-align: center;
 
         }
+        .color{
+        	width: 80px;
+        	height: 80px;
+        	background-color: aqua;
+        }
+        .color:after{
+        	content: "i'm from div!!!";
+        }
+        .change{
+        	margin: 50px 50px;
+        }
+                        @media print { 
+    /* All your print styles go here */
+        * { font-size: 20px; } 
+        #top{
+            font-size: 22px;
+            }   
+            #right,#left{
+                width: 100%;
+                height: auto;
+            }   
+            #heading{
+                font-size: 15px;
+            }
+        }
     </style>
 </head>
 
@@ -56,13 +81,22 @@
 
         <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Change the Position of DIV&lt;/title&gt;
+&lt;style&gt;
+div{
+	background-color: gold;
+	width: 80px;
+	height: 80px;}
+div:after{
+	content: "hello i'm div!!!!";}
+.change{
+	margin: 50px 50px;}
+&lt;/style&gt;
+&lt;/head&gt;
 &lt;body&gt;
-&lt;select&gt;
-  &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
-  &lt;option value="saab"&gt;Saab&lt;/option&gt;
-  &lt;option value="opel"&gt;Opel&lt;/option&gt;
-  &lt;option value="audi"&gt;Audi&lt;/option&gt;
-&lt;/select&gt;
+	&lt;div&gt;&lt;/div&gt;
+	&lt;div class="change"&gt;&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
     </div>
@@ -72,12 +106,8 @@
             Output
 
         </div>
-            <select>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
-</select>
+        <div class="color"></div>
+        <div class="color change"></div>
     </div>
 
      <script src="prism.js"></script>

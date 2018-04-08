@@ -3,27 +3,23 @@
 <head>
 	<title>Change the Position of DIV</title>
 	<style>
-		.change_position{
-			margin: attr(size);
-
-		}
-		.change_position:after{
-			content: "i changed the Position";
-		}
 
 		div{
 			background-color: gold;
 			width: 80px;
 			height: 80px;
 		}
-		
+		div:after{
+			content: "hello i'm div!!!!";
+		}
+		.change{
+			margin: 50px 50px;
+		}
 	</style>
 </head>
 <body>
-	<div>
-		hello i'm div!!!!
-	</div>
-	<div class="change_position" size="50"></div>
+	<div></div>
+	<div class="change"></div>
 
 
 </body>

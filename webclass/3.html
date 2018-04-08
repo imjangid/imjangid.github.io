@@ -4,7 +4,6 @@
     <title>Prectical Solution</title>
     <link rel="stylesheet" href="prism.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
     <style>
         html,
         body {
@@ -14,7 +13,7 @@
 
         #left {
             float: left;
-            font-size: 30vw;
+            font-size: 2vw;
             width: 50%;
             height: 100%;
 
@@ -47,7 +46,7 @@
 
 <body>
     <div id="top">
-        Factorial
+       List Tag
     </div>
     <div id="right">
         <div id="heading">
@@ -57,19 +56,20 @@
 
         <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;factorial&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;script&gt;
-            var num = prompt("Enter Num For Fact","3");
-            document.write(factorial(parseInt(num)));
-            function factorial(x) {
-                if (x==1){return 1;}
-                else{return x * factorial(x-1);}}
-
-        &lt;/script&gt;
-    &lt;/body&gt;
+&lt;body&gt;
+&lt;h2&gt;An Unordered HTML List&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;An Ordered HTML List&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/body&gt;
 &lt;/html&gt;</code></pre>
     </div>
 
@@ -78,18 +78,22 @@
             Output
 
         </div>
-  
+        <h2>An Unordered HTML List</h2>
 
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
 
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
     </div>
-    <script src="prism.js"></script>
-    		<script>
-			var num = prompt("Enter Num For Fact","3");
-			document.getElementById("left").innerHTML += factorial(parseInt(num));
-			function factorial(x) {
-				if (x==1){return 1;}
-				else{return x * factorial(x-1);}}
-
-		</script>
+     <script src="prism.js"></script>
 </body>
 </html>

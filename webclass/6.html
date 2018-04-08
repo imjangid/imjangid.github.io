@@ -41,12 +41,15 @@
             text-align: center;
 
         }
+        #form{
+        	background: linear-gradient(to right,#FF3955 , #FFB255);
+        }
     </style>
 </head>
 
 <body>
     <div id="top">
-       Employee Class
+       From using Div
     </div>
     <div id="right">
         <div id="heading">
@@ -56,44 +59,47 @@
 
         <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;From using Div&lt;/title&gt;
+&lt;style&gt;
+    #form{
+        background: linear-gradient(to right,#FF3955 , #FFB255);
+     }
+&lt;/style&gt;
+&lt;/head&gt;
 &lt;body&gt;
-&lt;h2&gt;An Unordered HTML List&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Coffee&lt;/li&gt;
-  &lt;li&gt;Tea&lt;/li&gt;
-  &lt;li&gt;Milk&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;An Ordered HTML List&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;Coffee&lt;/li&gt;
-  &lt;li&gt;Tea&lt;/li&gt;
-  &lt;li&gt;Milk&lt;/li&gt;
-&lt;/ol&gt;
+    &lt;div id="form"&gt;
+        Name: &lt;input type="text"&gt;
+        Password: &lt;input type="password"&gt;
+        &lt;button onclick="Submit()"&gt;Submit&lt;button&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+         function Submit() {
+     		alert("submited");
+     	}
+    &lt;/script&gt;
 &lt;/body&gt;
+
 &lt;/html&gt;</code></pre>
     </div>
 
     <div id="left">
         <div id="heading">
             Output
+		</div>
 
-        </div>
-        <h2>An Unordered HTML List</h2>
-
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>  
-
-<h2>An Ordered HTML List</h2>
-
-<ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol> 
+		<div id="form">
+			Name: <input type="text" name=""><br>
+			password : <input type="password" name="" ><br>
+			<button onclick="Submit()">Submit</button>
+		</div>
     </div>
+
      <script src="prism.js"></script>
+     <script>
+     	function Submit() {
+     		alert("submited");
+     	}
+     </script>
 </body>
 </html>

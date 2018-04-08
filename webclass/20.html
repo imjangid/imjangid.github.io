@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prectical Solution</title>
+        <link rel="stylesheet" href="prism.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <style>
+        html,
+        body {
+        width: 100%;
+        height: 99%;
+        }
+        #left {
+        float: left;
+        font-size: 2vw;
+        width: 50%;
+        height: 100%;
+        }
+        #right {
+        float: right;
+        width: 50%;
+        height: 100%;
+        }
+        #heading {
+        font-family: "Raleway";
+        font-size: 2vw;
+        text-align: center;
+        background-color: gold;
+        color: black;
+        font-weight: 500;
+        }
+        #top {
+        background-color: #80ced6;
+        font-size: 3vw;
+        color: antiquewhite;
+        text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="top">
+            Dynamic Table
+        </div>
+        <div id="right">
+            <div id="heading">
+                Code
+            </div>
+                                <pre><code class="language-markup">
+&lt!DOCTYPE html&gt
+&lthtml&gt
+    &lthead&gt
+        &lttitle&gtPrectical Solution&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt
+            &lttable id="here"&gt
+                &lttr&gt
+                    &ltth&gtFirst Name&lt/th&gt
+                    &ltth&gtLast Name&lt/th&gt
+                &lt/tr&gt
+            &lt/table&gt
+            &ltinput type="text" id="first" placeholder="First Name"&gt
+            &ltinput type="text" id="second" placeholder="Last Name"&gt
+            &ltbutton onclick="Add_user()"&gtAdd&lt/button&gt
+        &lt/div&gt
+        &ltscript&gt
+        function Add_user() {
+        var first = document.getElementById('first').value;
+        var second = document.getElementById('second').value;
+        var add_here = document.getElementById('here');
+            add_here.innerHTML += "&lttd&gt" + first + "&lt/td&gt&lttd&gt"+ second + "&lt/td&gt&lt/tr&gt";
+        }
+
+        &lt/script&gt
+    &lt/body&gt
+&lt/html&gt</code></pre>
+        </div>
+        <div id="left">
+            <div id="heading">
+                Output
+            </div>
+            <table id="here">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </table>
+            <input type="text" id="first" placeholder="First Name">
+            <input type="text" id="second" placeholder="Last Name">
+            <button onclick="Add_user()">Add</button>
+        </div>
+        <script>
+        function Add_user() {
+        var first = document.getElementById('first').value;
+        var second = document.getElementById('second').value;
+        var add_here = document.getElementById('here');
+            add_here.innerHTML += "<td>" + first + "</td><td>"+ second + "</td></tr>";
+        }
+        
+        </script>
+        <script src="prism.js"></script>
+    </body>
+</html>

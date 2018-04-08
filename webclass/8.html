@@ -4,7 +4,6 @@
     <title>Prectical Solution</title>
     <link rel="stylesheet" href="prism.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
     <style>
         html,
         body {
@@ -14,7 +13,7 @@
 
         #left {
             float: left;
-            font-size: 30vw;
+            font-size: 2vw;
             width: 50%;
             height: 100%;
 
@@ -47,7 +46,7 @@
 
 <body>
     <div id="top">
-        Factorial
+       Registration Form
     </div>
     <div id="right">
         <div id="heading">
@@ -57,19 +56,22 @@
 
         <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;factorial&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;script&gt;
-            var num = prompt("Enter Num For Fact","3");
-            document.write(factorial(parseInt(num)));
-            function factorial(x) {
-                if (x==1){return 1;}
-                else{return x * factorial(x-1);}}
-
-        &lt;/script&gt;
-    &lt;/body&gt;
+&lt;head&gt;
+&lt;title&gt;Html5 validation&lt;/title&gt;
+&lt;style&gt;
+input{
+background-color: gold;}
+input:invalid{
+background-color: red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form action="#" method="get" &gt;
+Name: &lt;input type="text" minlength=5&gt;&lt;br&gt;
+Mobile: &lt;input type="text" pattern="(\d){10}"&gt;&lt;br&gt;
+&lt;input type="submit" name=""&gt;
+&lt;/form&gt;
+&lt;/body&gt;
 &lt;/html&gt;</code></pre>
     </div>
 
@@ -78,18 +80,13 @@
             Output
 
         </div>
-  
-
-
+	<form action="#" method="get" >
+		Name: <input type="text" minlength=5><br>
+		Mobile: <input type="text" pattern="(\d){10}"><br>
+		<input type="submit" name="">
+	</form>
     </div>
-    <script src="prism.js"></script>
-    		<script>
-			var num = prompt("Enter Num For Fact","3");
-			document.getElementById("left").innerHTML += factorial(parseInt(num));
-			function factorial(x) {
-				if (x==1){return 1;}
-				else{return x * factorial(x-1);}}
 
-		</script>
+     <script src="prism.js"></script>
 </body>
 </html>

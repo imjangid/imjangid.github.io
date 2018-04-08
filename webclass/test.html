@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Html5 validation</title>
+	<title>Change the Position of DIV</title>
 	<style>
-	input{
-		background-color: gold;}
-	input:invalid{
-		background-color: red;	}
+		.change_position{
+			margin: attr(size);
+
+		}
+		.change_position:after{
+			content: "i changed the Position";
+		}
+
+		div{
+			background-color: gold;
+			width: 80px;
+			height: 80px;
+		}
+		
 	</style>
 </head>
 <body>
-	<form action="#" method="get" >
-		Name: <input type="text" minlength=5><br>
-		Mobile: <input type="text" pattern="(\d){10}"><br>
-		<input type="submit" name="">
-	</form>
+	<div>
+		hello i'm div!!!!
+	</div>
+	<div class="change_position" size="50"></div>
+
 
 </body>
 </html>

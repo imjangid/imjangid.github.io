@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>SOnna
+		</title>
+		<style>
+		body{
+		background-color: gold;
+		}
+		.shadow{
+			margin-top: 20%;
+		font-family:Josefin Sans, sans-serif;
+		font-size:9em;
+		text-align:center;
+		text-shadow: 0 -3px 0 #333,
+		0 6px 8px rgba(0,0,0,.4),
+		0 9px 10px rgba(0,0,0,.15),
+		0 30px 10px rgba(0,0,0,.18),
+		0 15px 10px rgba(0,0,0,.21);
+		}
+		.beat{
+			animation-name: beat;
+		animation-direction: alternate-reverse;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-duration: 0.7s;
+		}
+		hr{
+			width: 100px;
+		}
+		@keyframes beat{
+			0%{
+				font-size: 1em;
+				color: black;
+			}
+			100%{
+				font-size: 1.5em;
+				color: #f4425c;
+				text-shadow: none;
 
-<head>
-  <meta charset="UTF-8">
-  <title>SOnna
-</title>
-  <style>
-  body{
- background-color: gold; 
-}
-
-.shadow{
-  font-family:Josefin Sans, sans-serif;
-  font-size:5em;
-  text-align:center;
-  text-shadow: 0 -3px 0 #333,
-    0 6px 8px rgba(0,0,0,.4),
-    0 9px 10px rgba(0,0,0,.15),
-    0 30px 10px rgba(0,0,0,.18),
-    0 15px 10px rgba(0,0,0,.21);
-}
-hr{
-	width: 100px;
-}
-</style>
-
-  
-</head>
-
-<body>
-
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
-<div class="shadow">
-	Riya I love You
-
-</div>
-</body>
-
+			}
+		}
+		</style>
+		
+	</head>
+	<body>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<div class="shadow">
+			Riya I <span class="beat">love</span> You
+		</div>
+	</body>
 </html>

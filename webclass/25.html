@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prectical Solution</title>
+        <link rel="stylesheet" href="prism.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <style>
+        html,
+        body {
+        width: 100%;
+        height: 99%;
+        }
+        #left {
+        float: left;
+        font-size: 2vw;
+        width: 50%;
+        height: 100%;
+        }
+        #right {
+        float: right;
+        width: 50%;
+        height: 100%;
+        font-size: 22px;
+        }
+        #heading {
+        font-family: "Raleway";
+        font-size: 2vw;
+        text-align: center;
+        background-color: gold;
+        color: black;
+        font-weight: 500;
+        }
+        #top {
+        background-color: #80ced6;
+        font-size: 3vw;
+        color: antiquewhite;
+        text-align: center;
+        }
+        @media print {
+        /* All your print styles go here */
+        * { font-size: 20px; }
+        #top{
+        font-size: 22px;
+        }
+        #right,#left{
+        width: 100%;
+        height: auto;
+        }
+        #heading{
+        font-size: 15px;
+        }
+        }
+        </style>
+    </head>
+    <body>
+        <div id="top">
+            Hotel Management
+        </div>
+        <div id="right">
+            <div id="heading">
+                Code
+            </div>
+            <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    body{   background-image: url(hotel.jpg);
+            background-size: cover;}
+    .inline-item{   display: inline-flex;}
+    #transbox{
+            display: inline-block;
+            background-color: rgba(255,255,255,0.5);
+            width: 100%;}
+    #transbox&gt;h1 {
+            text-align: center;
+            font-weight: bold;
+            color: #000000;}
+    .center-align{font-size: 4vw;
+                margin-left:50%;
+    transform: translate(-50%,50%);}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="transbox"&gt;
+    &lt;h1&gt;Hamara HOTEL&lt;/h1&gt;
+    &lt;button onclick="signup(this)" type="submit" &gt;__Sign Up__&lt;/button&gt;
+    &lt;button onclick="login(this)" type="submit" &gt;__log in__&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="center-align" id="here"&gt;&lt;/div&gt;
+&lt;script&gt;
+var box =document.getElementById('here');
+function login (el) {
+    var data = `&lt;input type="text" name="username" placeholder ="username"&gt;&lt;br&gt;
+    &lt;input type="password" name="password" placeholder ="password"&gt;&lt;br&gt;
+    &lt;button onclick="login_submit(this)"&gt;log in&lt;/button&gt;`;
+    box.innerHTML = data;}
+function signup (el) {
+    var data = `&lt;input type="text" name="username" placeholder ="username"&gt;&lt;br&gt;
+    &lt;input type="password" name="password" placeholder ="password"&gt;&lt;br&gt;
+    &lt;input type="text" name="email" placeholder ="email"&gt;&lt;br&gt;
+    &lt;button onclick="signup_submit(this)"&gt;Signup in&lt;/button&gt;`;
+    box.innerHTML = data;}
+function login_submit (el) {box.innerHTML = "Welcome User__!!!!!!!!";}
+function signup_submit (el) {box.innerHTML = "submited";}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        <div id="left">
+            <div id="heading">
+                Output
+            </div>
+            <div id="transbox">
+                <h1>Hamara HOTEL</h1>
+                <button onclick="signup(this)" type="submit" >__Sign Up__</button>
+                <button onclick="login(this)" type="submit" >__log in__</button>
+            </div>
+            <div class="center-align" id="here"></div>
+            
+        </div>
+        <script>
+        var box =document.getElementById('here');
+        function login (el) {
+        var data = `<input type="text" name="username" placeholder ="username"><br>
+        <input type="password" name="password" placeholder ="password"><br>
+        <button onclick="login_submit(this)">log in</button>`;
+        box.innerHTML = data;}
+        function signup (el) {
+        var data = `<input type="text" name="username" placeholder ="username"><br>
+        <input type="password" name="password" placeholder ="password"><br>
+        <input type="text" name="email" placeholder ="email"><br>
+        <button onclick="signup_submit(this)">Signup in</button>`;
+        box.innerHTML = data;}
+        function login_submit (el) {box.innerHTML = "Welcome User__!!!!!!!!";}
+        function signup_submit (el) {box.innerHTML = "submited";}
+        </script>
+        <script src="prism.js"></script>
+    </body>
+</html>

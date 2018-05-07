@@ -642,21 +642,21 @@ function color_Radial(ctx) {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
-draw(quotes[parseInt(Math.random()*79)]);
 
+
+function generate(){
+	draw(quotes[parseInt(Math.random()*79)]);
+}
 
 
 
 
 function draw(text) {
-    // ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    var loop = parseInt(Math.random()*20);
+    for(var s=0;s<loop;s++){
     color_Radial(ctx);
-    color_Radial(ctx);
-    color_Radial(ctx);
-    color_Radial(ctx);
-    color_Radial(ctx);
-    color_Radial(ctx);
+}
     let splitter = 9;
     var counter = 0,
         data = "";
@@ -686,7 +686,7 @@ function draw(text) {
         }
         if (i == word.length - 1) {
         	temp_font = font_size;
-            while (canvas.width - 800 > ctx.measureText(data).width && ctx.measureText(data).width > 1) {
+            while (canvas.width - 1000 > ctx.measureText(data).width && ctx.measureText(data).width > 1) {
                 ctx.font = `${temp_font}px 'Josefin Slab'`;
                 temp_font += 1;
             }

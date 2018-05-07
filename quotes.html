@@ -40,13 +40,25 @@
             border-radius: 100px;
             
         }
+        button{
+        	position: absolute;
+        	bottom: 0;
+        	padding: 20px;
+        	border:0;
+        	box-shadow: 2px 2px 4px gray;
+        	background-color: aqua;
+        }
+        button:hover{
+        	background-color: gold;
+        }
+        button:active{
+        	background-color: red;
+        }
     </style>
 </head>
 <body>
     <canvas id="draw"></canvas>
-<!--     <div class="color">
-        <input type="color" value="" id="first">
-    </div> -->
+	<button onclick="generate()">generate</button>
     <script src="js/canvas_script.js"></script>
 </body>
 </html>

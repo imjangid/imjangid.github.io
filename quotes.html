@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600" rel="stylesheet">
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            width: 100%;
+        };
+        canvas{
+            display: block;
+            position: absolute;
+        }
+        #back{
+            display: none;
+            background-color: aquamarine;
+        }
+        .color{
+            background-color: darksalmon;
+            border-radius: 4px;
+            height: 80%;
+            width: 50px;
+        }
+        .color input{
+            height: 35px;
+            width: 35px;
+            border: none;
+            border-radius: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <canvas id="draw"></canvas>
+<!--     <div class="color">
+        <input type="color" value="" id="first">
+    </div> -->
+    <script src="js/canvas_script.js"></script>
+</body>
+</html>

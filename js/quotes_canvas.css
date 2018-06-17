@@ -1,0 +1,45 @@
+html,body{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            width: 100%;
+        };
+        canvas{
+            display: block;
+            position: absolute;
+        }
+        #back{
+            display: none;
+            background-color: aquamarine;
+        }
+        .color{
+            background-color: darksalmon;
+            border-radius: 4px;
+            height: 80%;
+            width: 50px;
+        }
+        .color input{
+            height: 35px;
+            width: 35px;
+            border: none;
+            border-radius: 100px;
+            
+        }
+        button{
+        	position: absolute;
+        	bottom: 0;
+        	padding: 20px;
+        	border:0;
+        	box-shadow: 2px 2px 4px gray;
+        	background-color: aqua;
+        }
+        button:hover{
+        	background-color: gold;
+        }
+        button:active{
+        	background-color: red;
+        }

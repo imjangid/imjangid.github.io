@@ -15,3 +15,21 @@
 // });
 //
 //
+//
+//
+// $('.lang').each(function () {
+//
+//     console.log(this);
+// });
+//
+// $('.item').click(function () {
+//     Hide();
+//     var text = this.innerText;
+//     if(text === 'Language'){
+//         $('.lang').show();
+//     }
+// });
+//
+// function Hide() {
+//     $('.image').hide(200);
+// }

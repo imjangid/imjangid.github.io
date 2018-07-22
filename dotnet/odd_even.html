@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code</title>
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+<div class="head_box" style="width: 95%">
+    <div class="heading"> Odd Even </div>
+    <div class="code">
+        <pre>
+            <code class="language-csharp">using System;
+
+namespace Programe
+{
+    class MyPrograme
+    {
+        static String Odd_Even(int x)
+        {
+            if ((x & 1)==1)
+            {
+                return "Odd Number";
+            }
+            else
+            {
+                return "Even Number";
+            }
+        }
+        static void Main()
+        {
+                Console.WriteLine("\n2655 is {0}",Odd_Even(2655));
+
+        }
+     }
+}
+
+            </code></pre></div></div>
+<script src="script/prism.js"></script>
+</body>
+</html>

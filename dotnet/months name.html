@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code</title>
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+<div class="head_box" style="width: 95%">
+    <div class="heading">Month Decimal to Name     </div>
+    <div class="code">
+        <pre>
+            <code class="language-csharp">using System;
+using System.Linq;
+namespace Ash
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Month number: ");
+            Int32 month = Int32.Parse(Console.ReadLine());
+            switch (month)
+            {
+                case 1:
+                    Console.WriteLine("JAN");
+                    break;
+                case 2:
+                    Console.WriteLine("FEB");
+                    break;
+                case 3:
+                    Console.WriteLine("MAR");
+                    break;
+                case 4:
+                    Console.WriteLine("APR");
+                    break;
+                case 5:
+                    Console.WriteLine("MAY");
+                    break;
+                case 6:
+                    Console.WriteLine("JUN");
+                    break;
+                case 7:
+                    Console.WriteLine("JUL");
+                    break;
+                case 8:
+                    Console.WriteLine("AUG");
+                    break;
+                case 9:
+                    Console.WriteLine("SEP");
+                    break;
+                case 10:
+                    Console.WriteLine("OCT");
+                    break;
+                case 11:
+                    Console.WriteLine("NOV");
+                    break;
+                case 12:
+                    Console.WriteLine("DEC");
+                    break;
+                default:
+                    Console.WriteLine("Invalid Choice");
+                    break;
+
+            }
+           
+        }
+    }
+}
+    </code></pre></div></div>
+<script src="script/prism.js"></script>
+</body>
+</html>

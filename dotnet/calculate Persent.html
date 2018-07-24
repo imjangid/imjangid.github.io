@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code</title>
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+<div class="head_box" style="width: 95%">
+    <div class="heading"> Read and Calulate Persentage    </div>
+    <div class="code">
+        <pre>
+            <code class="language-csharp"> using System;
+using System.Linq;
+namespace Ash
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Your Roll Number: ");
+            Int64 roll = Int64.Parse(Console.ReadLine());
+            Console.Write("Enter Your Name: ");
+            string name = Console.ReadLine();
+            int[] marks = new int[3];
+            for (int x = 0; x < 3; x++)
+            {
+                Console.Write("Enter {0} marks: ",x+1);
+                marks[x] = int.Parse(Console.ReadLine());
+            }
+            float persent = marks.Sum()/3;
+            Console.Write("{0} you Got {1} and you are ",name,persent);
+            if (persent > 60)
+            {
+                Console.WriteLine("First Divison");
+            }
+            else if(persent>35){
+                Console.WriteLine("Second Divison");
+            }
+            else
+            {
+                Console.WriteLine("Third Divison");
+            }
+        }
+    }
+}
+   </code></pre></div></div>
+<script src="script/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code</title>
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+<div class="head_box" style="width: 95%">
+    <div class="heading">Leap Year     </div>
+    <div class="code">
+        <pre>
+            <code class="language-csharp">using System;
+
+namespace Ash
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Enter A Year : ");
+            int year = int.Parse(Console.ReadLine());
+            if (year % 100 == 0)
+            {
+                if (year % 400==0)
+                {
+                    Console.WriteLine("{0} is Leap Year",year);
+                    return;
+                }
+            }
+            if (year % 4 == 0)
+            {
+                Console.WriteLine("{0} is Leap Year",year);
+            }
+
+        }
+    }
+}
+    </code></pre></div></div>
+<script src="script/prism.js"></script>
+</body>
+</html>

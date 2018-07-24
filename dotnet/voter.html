@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code</title>
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+<div class="head_box" style="width: 95%">
+    <div class="heading">Check Eligiblity     </div>
+    <div class="code">
+        <pre>
+            <code class="language-csharp"> using System;
+
+namespace Ash
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Enter A Age : ");
+            int year = int.Parse(Console.ReadLine());
+            if (year<18)
+            {
+                Console.WriteLine("You are Not eligible");
+            }
+            else
+            {
+                Console.WriteLine("You are eligible");
+            }
+
+        }
+    }
+}
+   </code></pre></div></div>
+<script src="script/prism.js"></script>
+</body>
+</html>

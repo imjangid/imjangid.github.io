@@ -13,7 +13,7 @@ html, body {
   align-items: center;
   justify-content: center; }
   html .head_box, body .head_box {
-    overflow-y: scroll;
+    
     -webkit-user-select: none;
     /* Safari 3.1+ */
     -moz-user-select: none;
@@ -41,8 +41,9 @@ html, body {
       html .head_box .code pre code, body .head_box .code pre code {
         font-size: 2em; }
     html .head_box .programs, body .head_box .programs {
+    	overflow-y: scroll;
       width: 100%;
-      height: 100%; }
+      height: 90%; }
       html .head_box .programs .program, body .head_box .programs .program {
         font-size: 4em;
         font-family: "Overlock",sans-serif;

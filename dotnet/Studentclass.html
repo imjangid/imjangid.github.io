@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code</title>
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+<div class="head_box" style="width: 95%">
+    <div class="heading">     </div>
+    <div class="code">
+        <pre>
+            <code class="language-csharp"> using System;
+namespace Student
+{
+    public class Student
+    {
+        String name = "Ashvini Jangid";
+        Int32 roll = 123456789;
+        Int64 mobile_num = 9694978266;
+        String city = "Jaipur";
+        Char sex = 'M';
+
+
+        static void Main(string[] arg)
+        {
+            Student ash = new Student();
+
+
+
+            Console.WriteLine("{0} {1} {2} {3} {4} ", ash.get_city(), ash.get_name(), ash.get_roll(), ash.get_sex(), ash.get_city());
+
+        }
+        String get_name() { return name; }
+        Int32 get_roll() { return roll; }
+        Int64 get_phone() { return mobile_num; }
+        Char get_sex() { return sex; }
+        String get_city() { return city; }
+
+    }   </code></pre></div></div>
+<script src="script/prism.js"></script>
+</body>
+</html>

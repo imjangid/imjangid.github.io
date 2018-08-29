@@ -1,598 +1,174 @@
 <!doctype html>
-<html class="no-js" lang="en">
-	<head>
-		<!-- title -->
-		<title>Ash</title>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-		<meta name="author" content="Ashvini Jangid" />
-		<!-- description -->
-		<meta name="description" content="I'm Ashvini Jangid" />
-		<!-- keywords -->
-		<meta name="keywords" content="Ashvini Jangid,Programmer,Developer"
-		/>
-		<!-- favicon -->
-		<link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png" />
-		<link rel="shortcut icon" href="./images/favicon.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
-		<link rel="stylesheet" href="css/animate.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/et-line-icons.css" />
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/themify-icons.css" />
-		<link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="sc" />
-		<link rel="stylesheet" href="css/swiper.min.css" />
-		<link rel="stylesheet" href="css/justified-gallery.min.css' %}" />
-		<link rel="stylesheet" href="css/magnific-popup.css" />
-		<link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
-		<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css" />
-		<link rel="stylesheet" href="css/bootsnav.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/responsive.css" />
-		<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-		<style>
-		.riya {
-		font-family: 'CoreCircus', sans-serif;
-		text-transform: uppercase;
-		font-size: 16vw;
-		text-align: center;
-		line-height: 1;
-		margin: 0;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		position: absolute;
-		color: #f98ca4;
-		text-shadow: -1px -1px 0 #6e1f58, 1px -1px 0 #6e1f58, -1px 1px 0 #6e1f58, 1px 1px 0 #6e1f58, 1px 0px 0px #65f283, 0px 1px 0px #65f283, 2px 1px 0px #65f283, 1px 2px 0px #65f283, 3px 2px 0px #65f283, 2px 3px 0px #65f283, 4px 3px 0px #65f283, 3px 4px 0px #65f283, 5px 4px 0px #65f283, 3px 5px 0px #6e1f58, 6px 5px 0px #6e1f58, -1px 2px 0 black, 0 3px 0 #6e1f58, 1px 4px 0 #6e1f58, 2px 5px 0px #6e1f58, 2px -1px 0 #6e1f58, 3px 0 0 #6e1f58, 4px 1px 0 #6e1f58, 5px 2px 0px #6e1f58, 6px 3px 0 #6e1f58, 7px 4px 0 #6e1f58, 10px 10px 4px #dac249;
-		}
-		.riya:after, .riya:before {
-		content: attr(data-heading);
-		position: absolute;
-		overflow: hidden;
-		left: 0;
-		width: 100%;
-		top: 0;
-		z-index: 5;
-		}
-		.riya:before {
-		text-shadow: -1px -1px 0 #9e132c, 1px -1px 0 #9e132c, -1px 1px 0 #9e132c, 1px 1px 0 #9e132c, 1px 0px 0px #f5b10b, 0px 1px 0px #f5b10b, 2px 1px 0px #f5b10b, 1px 2px 0px #f5b10b, 3px 2px 0px #f5b10b, 2px 3px 0px #f5b10b, 4px 3px 0px #f5b10b, 3px 4px 0px #f5b10b, 5px 4px 0px #f5b10b, 3px 5px 0px #9e132c, 6px 5px 0px #9e132c, -1px 2px 0 black, 0 3px 0 #9e132c, 1px 4px 0 #9e132c, 2px 5px 0px #9e132c, 2px -1px 0 #9e132c, 3px 0 0 #2f3e9c, 4px 1px 0 #9e132c, 5px 2px 0px #9e132c, 6px 3px 0 #9e132c, 7px 4px 0 #9e132c, 10px 10px 4px rgba(106, 241, 119, 0.8);
-		color: #65f283;
-		height: 66%;
-		}
-		.riya:after {
-		height: 33%;
-		color: #4ad9db;
-		text-shadow: -1px -1px 0 #2f3e9c, 1px -1px 0 #2f3e9c, -1px 1px 0 #2f3e9c, 1px 1px 0 #2f3e9c, 1px 0px 0px #f98ca4, 0px 1px 0px #f98ca4, 2px 1px 0px #f98ca4, 1px 2px 0px #f98ca4, 3px 2px 0px #f98ca4, 2px 3px 0px #f98ca4, 4px 3px 0px #f98ca4, 3px 4px 0px #f98ca4, 5px 4px 0px #f98ca4, 3px 5px 0px #2f3e9c, 6px 5px 0px #2f3e9c, -1px 2px 0 black, 0 3px 0 #2f3e9c, 1px 4px 0 #2f3e9c, 2px 5px 0px #2f3e9c, 2px -1px 0 #2f3e9c, 3px 0 0 #2f3e9c, 4px 1px 0 #2f3e9c, 5px 2px 0px #2f3e9c, 6px 3px 0 #2f3e9c, 7px 4px 0 #2f3e9c;
-		}
-		@font-face {
-		font-family: 'CoreCircus2DDot1';
-		src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot");
-		src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf") format("truetype");
-		}
-		@font-face {
-		font-family: 'CoreCircus';
-		src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot");
-		src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf") format("truetype");
-		}
-		@font-face {
-		font-family: 'CoreCircusPierrot4';
-		src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot");
-		src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.ttf") format("truetype");
-		}
-		
-		.h1_class {
-		position: absolute;
-		font-family: 'Open Sans';
-		font-weight: 600;
-		font-size: 12px;
-		text-transform: uppercase;
-		left: 50%;
-		top: 58%;
-		margin-left: -20px;
-		}
-		.body {
-		color: gold;
-		position: absolute;
-		top: 50%;
-		margin-left: -50px;
-		left: 50%;
-		animation: speeder .4s linear infinite;
-		}
-		.body>span {
-		height: 5px;
-		width: 35px;
-		background: #000;
-		position: absolute;
-		top: -19px;
-		left: 60px;
-		border-radius: 2px 10px 1px 0;
-		}
-		.base span {
-		position: absolute;
-		width: 0;
-		height: 0;
-		border-top: 6px solid transparent;
-		border-right: 100px solid #000;
-		border-bottom: 6px solid transparent;
-		}
-		.base span:before {
-		content: "";
-		height: 22px;
-		width: 22px;
-		border-radius: 50%;
-		background: #000;
-		position: absolute;
-		right: -110px;
-		top: -16px;
-		}
-		.base span:after {
-		content: "";
-		position: absolute;
-		width: 0;
-		height: 0;
-		border-top: 0 solid transparent;
-		border-right: 55px solid #000;
-		border-bottom: 16px solid transparent;
-		top: -16px;
-		right: -98px;
-		}
-		.face {
-		position: absolute;
-		height: 12px;
-		width: 20px;
-		background: #000;
-		border-radius: 20px 20px 0 0;
-		transform: rotate(-40deg);
-		right: -125px;
-		top: -15px;
-		}
-		.face:after {
-		content: "";
-		height: 12px;
-		width: 12px;
-		background: #000;
-		right: 4px;
-		top: 7px;
-		position: absolute;
-		transform: rotate(40deg);
-		transform-origin: 50% 50%;
-		border-radius: 0 0 0 2px;
-		}
-		.body>span>span:nth-child(1),
-		.body>span>span:nth-child(2),
-		.body>span>span:nth-child(3),
-		.body>span>span:nth-child(4) {
-		width: 30px;
-		height: 1px;
-		background: #000;
-		position: absolute;
-		animation: fazer1 .2s linear infinite;
-		}
-		.body>span>span:nth-child(2) {
-		top: 3px;
-		animation: fazer2 .4s linear infinite;
-		}
-		.body>span>span:nth-child(3) {
-		top: 1px;
-		animation: fazer3 .4s linear infinite;
-		animation-delay: -1s;
-		}
-		.body>span>span:nth-child(4) {
-		top: 4px;
-		animation: fazer4 1s linear infinite;
-		animation-delay: -1s;
-		}
-		@keyframes fazer1 {
-		0% {
-		left: 0;
-		}
-		100% {
-		left: -80px;
-		opacity: 0;
-		}
-		}
-		@keyframes fazer2 {
-		0% {
-		left: 0;
-		}
-		100% {
-		left: -100px;
-		opacity: 0;
-		}
-		}
-		@keyframes fazer3 {
-		0% {
-		left: 0;
-		}
-		100% {
-		left: -50px;
-		opacity: 0;
-		}
-		}
-		@keyframes fazer4 {
-		0% {
-		left: 0;
-		}
-		100% {
-		left: -150px;
-		opacity: 0;
-		}
-		}
-		@keyframes speeder {
-		0% {
-		transform: translate(2px, 1px) rotate(0deg);
-		}
-		10% {
-		transform: translate(-1px, -3px) rotate(-1deg);
-		}
-		20% {
-		transform: translate(-2px, 0px) rotate(1deg);
-		}
-		30% {
-		transform: translate(1px, 2px) rotate(0deg);
-		}
-		40% {
-		transform: translate(1px, -1px) rotate(1deg);
-		}
-		50% {
-		transform: translate(-1px, 3px) rotate(-1deg);
-		}
-		60% {
-		transform: translate(-1px, 1px) rotate(0deg);
-		}
-		70% {
-		transform: translate(3px, 1px) rotate(-1deg);
-		}
-		80% {
-		transform: translate(-2px, -1px) rotate(1deg);
-		}
-		90% {
-		transform: translate(2px, 1px) rotate(0deg);
-		}
-		100% {
-		transform: translate(1px, -2px) rotate(-1deg);
-		}
-		}
-		.longfazers {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		}
-		.longfazers span {
-		position: absolute;
-		height: 2px;
-		width: 20%;
-		background: #000;
-		}
-		.longfazers span:nth-child(1) {
-		top: 20%;
-		animation: lf .6s linear infinite;
-		animation-delay: -5s;
-		}
-		.longfazers span:nth-child(2) {
-		top: 40%;
-		animation: lf2 .8s linear infinite;
-		animation-delay: -1s;
-		}
-		.longfazers span:nth-child(3) {
-		top: 60%;
-		animation: lf3 .6s linear infinite;
-		}
-		.longfazers span:nth-child(4) {
-		top: 80%;
-		animation: lf4 .5s linear infinite;
-		animation-delay: -3s;
-		}
-		@keyframes lf {
-		0% {
-		left: 200%;
-		}
-		100% {
-		left: -200%;
-		opacity: 0;
-		}
-		}
-		@keyframes lf2 {
-		0% {
-		left: 200%;
-		}
-		100% {
-		left: -200%;
-		opacity: 0;
-		}
-		}
-		@keyframes lf3 {
-		0% {
-		left: 200%;
-		}
-		100% {
-		left: -100%;
-		opacity: 0;
-		}
-		}
-		@keyframes lf4 {
-		0% {
-		left: 200%;
-		}
-		100% {
-		left: -100%;
-		opacity: 0;
-		}
-		}
-		#load {
-		width: 100%;
-		height: 100%;
-		background-color: gold;
-		}
-		body{
-			overflow: hidden;
-		}
-		
-		</style>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	</head>
-	<body class="width-100">
-		<div id="load">
-			<div class='body'>
-				<span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</span>
-				<div class='base'>
-					<span></span>
-					<div class='face'></div>
-				</div>
-			</div>
-			<div class='longfazers'>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<h1 class="h1_class">Loading</h1>
-		</div>
-		<div class="bg-black position-absolute left-0 top-0 width-100 height-100" id="main" style="display:none">
-			<!-- start header -->
-			<header>
-				<!-- start navigation -->
-				<!-- end navigation -->
-			</header>
-			<!-- end header -->
-			<!-- start slider section -->
-			<section class="no-padding">
-				<div class="swiper-bottom-scrollbar-full swiper-container">
-					<div class="swiper-wrapper">
-						<!-- start slider item -->
-						<div class="swiper-slide width-550px xs-width-100 xs-height-auto">
-							<div class="position-relative width-90 height-100 display-table padding-ten-all xs-padding-fifteen-all xs-width-100">
-								<div class="display-table-cell vertical-align-middle">
-									<h4 class="name text-medium-gray font-weight-400 display-block margin-5px-bottom alt-font">Hello,</h4>
-									<h6 class="name text-medium-gray font-weight-300 margin-20px-bottom alt-font">I'm AShvini Jangid</h6>
-									<p style="color:wheat" class="text-large dispaly-block pull-left font-weight-300 width-90 margin-35px-bottom">I write code.</p>
-									<img src="img/sign.jpg" class="width-60 signature" alt="" />
-								</div>
-							</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
-							<div class="height-100 display-table">
-								<div class="display-table-cell vertical-align-middle">
-									<div class="display-block position-relative">
-										<img src="img/me.jpg" alt="" />
-										<p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Person Behind this</p>
-									</div>
-									<div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
-										<div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
-										<h3><a style="color:black;text-shadow: 2px 2px 4px #80ced6"  class=" font-weight-500 alt-font text-white-hover" href="#">Ashvini Jangid</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
-							<div class="height-100 display-table">
-								<div class="display-table-cell vertical-align-middle">
-									<div class="display-block position-relative">
-										<img src="img/python.jpg" alt="" />
-										<p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Speaks Python</p>
-									</div>
-									<div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
-										<div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
-										<h3><a style="color:black;text-shadow: 2px 2px 4px #80ced6"  class=" font-weight-500 alt-font text-white-hover" href="#">Python Development</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end slider item -->
-						<!-- end slider item -->
-						<div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
-							<div class="height-100 display-table">
-								<div class="display-table-cell vertical-align-middle">
-									<div class="display-block position-relative">
-										<img src="img/kartik.jpg" alt="" />
-										<p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Dedication</p>
-									</div>
-									<div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
-										<div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
-										<h3><a style="color:black;text-shadow: 2px 2px 4px #80ced6"  class=" font-weight-500 alt-font text-white-hover" href="https://www.facebook.com/profile.php?id=100009089099582">Kartik Jangid</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- start slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
-							<div class="height-100 display-table">
-								<div class="display-table-cell vertical-align-middle">
-									<div class="display-block position-relative">
-										<img src="img/website.jpg" alt="" />
-										<p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Web frontend and backend</p>
-									</div>
-									<div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
-										<div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
-										<h3><a style="color:black;text-shadow: 2px 2px 4px #80ced6"  class=" font-weight-500 alt-font text-white-hover" href="#">Web Development</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
-							<div class="height-100 display-table">
-								<div class="display-table-cell vertical-align-middle">
-									<div class="display-block position-relative">
-										<img src="img/tech.jpg" alt="" />
-										<p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Teknuance Info Solution</p>
-									</div>
-									<div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
-										<div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
-										<h3><a style="color:black;text-shadow: 2px 2px 4px #80ced6"  class=" font-weight-500 alt-font text-white-hover" href="#">Web Scraping</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
-							<div class="height-100 display-table">
-								<div class="display-table-cell vertical-align-middle">
-									<div class="display-block position-relative">
-										<img src="img/research.jpg" alt="" />
-										<p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Teknuance Info Solution</p>
-									</div>
-									<div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
-										<div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
-										<h3><a style="color:black;text-shadow: 2px 2px 4px #80ced6"  class=" font-weight-500 alt-font text-white-hover" href="#">Research Analysis</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<div class="swiper-slide width-auto xs-height-auto last-paragraph-no-margin">
-							<div class="height-100 display-table">
-								<div class="display-table-cell vertical-align-middle">
-									<div class="display-block position-relative">
-										<img src="img/exol.jpg" alt="" />
-										<p class="bottom-text width-100 text-extra-small text-white text-uppercase text-center">Exol International</p>
-									</div>
-									<div class="hover-title-box padding-55px-lr width-300px sm-width-100 sm-padding-20px-lr">
-										<div class="separator width-50px bg-black md-display-none xs-margin-lr-auto"></div>
-										<h3><a style="color:black;text-shadow: 2px 2px 4px #80ced6"  class="font-weight-500 alt-font text-white-hover" href="#">Backend Developer</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<!-- end slider item -->
-						<!-- start slider item -->
-						<!-- end slider item -->
-						<div class="swiper-slide width-150px xs-width-100 xs-height-auto">
-						</div>
-					</div>
-					<!-- start slider swiper pagination -->
-					<div class="swiper-scrollbar xs-display-none"></div>
-					<div class="swiper-pagination-vertical position-fixed bullet-deep-pink z-index-5"></div>
-					<!-- end slider swiper pagination -->
-				</div>
-			</section>
-			<!-- end slider section -->
-		</div>
-		<!-- start scroll to top -->
-		<a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
-		<!-- end scroll to top  -->
-		<!-- javascript libraries -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-		<script type="text/javascript" src="js/modernizr.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="js/skrollr.min.js"></script>
-		<script type="text/javascript" src="js/smooth-scroll.js"></script>
-		<script type="text/javascript" src="js/jquery.appear.js"></script>
-		<script type="text/javascript" src="js/bootsnav.js"></script>
-		<script type="text/javascript" src="js/jquery.nav.js"></script>
-		<script type="text/javascript" src="js/wow.min.js"></script>
-		<script type="text/javascript" src="js/page-scroll.js"></script>
-		<script type="text/javascript" src="js/swiper.min.js"></script>
-		<script type="text/javascript" src="js/jquery.count-to.js"></script>
-		<script type="text/javascript" src="js/jquery.stellar.js"></script>
-		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-		<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-		<script type="text/javascript" src="js/classie.js"></script>
-		<script type="text/javascript" src="js/hamburger-menu.js"></script>
-		<script type="text/javascript" src="js/counter.js"></script>
-		<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-		<script type="text/javascript" src="js/equalize.min.js"></script>
-		<script type="text/javascript" src="js/skill.bars.jquery.js"></script>
-		<script type="text/javascript" src="js/justified-gallery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
-		<script type="text/javascript" src="js/instafeed.min.js"></script>
-		<script type="text/javascript" src="js/retina.min.js"></script>
-		<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-		<!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
-		<!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>-->
-		<!-- setting -->
-		<script>
-			var r=false;
-			var i=false;
-			var y=false;
-			var a=false;
-			document.onkeypress = function (e) {
-				if(e.keyCode===114|| e.keyCode===82){
-					r = true;
-					console.log("r true");
-				}
-				if(e.keyCode===105|| e.keyCode===73){
-					i = true;
-					console.log("i true");
-				}
-				if(e.keyCode===89|| e.keyCode===121){
-					y = true;
-					console.log("y true");
-				}
-				if(e.keyCode===97|| e.keyCode===65){
-					a = true;
-					if(r==i==y==a){
-						document.getElementsByTagName('BODY')[0].innerHTML =`<h1 class="riya" contenteditable data-heading="Riya love you">Riya love you</h1>`;
-					}
-					
-					
-				}
-		
-		};
-		
-		
-		
-		
-		var main = document.getElementById("main");
-		var load = document.getElementById("load");
-		function boom() {
-		// code here
-		main.style.display = "block";
-		body.style.overflow = "scroll";
-		};
-		$(document).ready(boom());
-		</script>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ash</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/emoji.css">
+
+</head>
+<body>
+<div class="container">
+   <div class="photo">
+   </div>
+    <div class="about">
+        <div class="detail">
+            <div class="heading" large="A">bout me<i class="em em-loudspeaker"></i></div>
+            <br>
+            <strong>i'm developer <i class="em em-male-technologist"></i></strong><br>
+            I'm Python Developer and like to do <br>
+            web designing.
+            <br>
+            <img src="files/sign.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+ <!-- --------------- -------------second-- ------------------------- --------------->
+<div class="container" id="services">
+    <div class="about">
+        <div class="detail" id="detail">
+            <div class="heading" large="S">ervices</div>
+            I'm also helpful<i class="em em-arrow_right"></i>
+            <br>
+        </div>
+    </div>
+    <div class="services">
+        <div class="python" >
+            <img src="files/programming.png" alt="">
+            <div class="text">
+                <strong>Programming</strong><br>
+                I Program in Html<i class="em em-face_with_hand_over_mouth"></i></i><i class="em em-laughing"></i>
+            </div>
+        </div>
+        <div class="web">
+            <img src="files/system.png" alt="">
+            <div class="text">
+                <strong>IoT</strong> <br>
+                <i class="em em-hash"></i>Ohhh! I have all Arduino Bord.<i class="em em-eyeglasses"></i><i class="em em-face_with_raised_eyebrow"></i>
+            </div>
+        </div>
+        <div class="web">
+            <img src="files/web.png" alt="">
+            <div class="text">
+                <strong>Web-Designing</strong> <br>
+                Django and Scss make Good<i class="em em-i_love_you_hand_sign"></i><i class="em em-i_love_you_hand_sign"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--#############################-------------third-languages-------##########################------->
+<div class="container lang-box">
+    <div class="box-flow">
+        <div class="display-block" style="box-shadow: none">
+            <div class="heading" large="C" style="text-align: center">an help</div>
+        </div>
+        <!--<div class="display-block">-->
+            <!--<select multiple>-->
+                <!--<option class="item">Programming</option>-->
+                <!--<option class="item">DataBases</option>-->
+                <!--<option class="item">Tools</option>-->
+                <!--<option class="item">Neural Nets</option>-->
+                <!--<option class="item">Styling</option>-->
+            <!--</select>-->
+        <!--</div>-->
+        <div class="display-block image lang">
+            <img src="files/python.png" alt="">
+        </div>
+        <div class="display-block image lang">
+            <img src="files/js.png" alt="">
+        </div>
+        <div class="display-block image database">
+            <img src="files/mongodb.png" alt="">
+        </div>
+        <div class="display-block image database">
+            <img src="files/mysql.svg" alt="">
+        </div>
+        <div class="display-block image style">
+            <img src="files/css.png" alt="">
+        </div>
+        <div class="display-block image style">
+            <img src="files/sass.png" alt="">
+        </div>
+        <div class="display-block image nets">
+            <img src="files/deep.png" alt="">
+        </div>
+        <div class="display-block image nets">
+            <img src="files/vision.png" alt="">
+        </div>
+        <div class="display-block image backend">
+            <img src="files/django.png" alt="">
+        </div>
+        <div class="display-block image style">
+            <img src="files/ps.png" alt="">
+        </div>
+        <div class="display-block image backend">
+            <img src="files/php.png" alt="">
+        </div>
+        <div class="display-block image backend">
+            <img src="files/linux.png" alt="">
+        </div>
+        <div class="display-block image style">
+            <img src="files/html.png" alt="">
+        </div>
+        <div class="display-block image tools">
+            <img src="files/iot.png" alt="">
+        </div>
+        <div class="display-block image tools">
+            <img src="files/web.png" alt="">
+        </div>
+        <div class="display-block image tools">
+            <img src="files/arduino.png" alt="">
+        </div>
+        <div class="display-block image tools">
+            <img src="files/redis.png" alt="">
+        </div>
+    </div>
+</div>
+    <div class="container about_me">
+        <div class="hobby">
+            <div class="box">Life Ecstasy</div>
+         </div>
+        <div class="personal-detail">
+            <div class="text-box hobbies">Body Building <i class="em em-muscle"></i>
+                <div class="sub-quote">I don’t eat for taste, I eat for function.</div></div>
+            <div class="text-box hobbies">Programming<i class="em em-computer"></i>
+                <div class="sub-quote">Computer language design is just like a stroll in the park. Jurassic Park, that is.</div></div>
+            <div class="text-box hobbies">Fixing Things <i class="em em-male-mechanic"></i></i>
+                <div class="sub-quote">What can I do next time to make this less difficult for you?</div></div>
+            <div class="text-box likes">Cooking<i class="em em-female-cook"></i>
+                <div class="sub-quote">Bake<i class="em em-cookie"></i> and shake<i class="em em-tropical_drink"></i> </div></div>
+            <div class="text-box likes">Elucubrate/ <br>Night Owl<i class="em em-night_with_stars"></i>
+                <div class="sub-quote">At the end of The day<i class="em em-moon"></i> I'm just getting started. </div></div>
+
+        </div>
+    </div>
+
+
+
+<div class="container flex-layout">
+    <div class="contact">
+        <a href="mailto:ashvnijangid@gmail.com?Subject=Feel free to mail ME" target="_top"><img src="files/mail.png" alt=""></a>
+    </div>
+    <div class="contact">
+        <a href="tg://resolve?domain=ashvinijangid" target="_top"><img src="files/tele.png" alt=""></a>
+    </div>
+    <div class="contact">
+        <a href="tel:9694978266" target="_top"><div class="number"><i class="em em-call_me_hand"></i>969-497-8266</div></a>
+    </div>
+
+
+
+
+</div>
+
+
+<script src="script/jquery-3.3.1.min.js"></script>
+<script src="script/script.js"></script>
+</body>
 </html>

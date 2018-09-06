@@ -56,9 +56,7 @@ function draw_rect(data,x,y,temp_font){
 	let wid = ctx.measureText(data).width/2+temp_font;
 	ctx.rect(x-wid,y,ctx.measureText(data).width+2*temp_font,temp_font+10);
 	ctx.fillStyle = "gold";
-	ctx.shadowColor="black";
-
-
+	ctx.shadowColor="#777";
 	ctx.fill();
 	ctx.globalAlpha = 1;
 	       
@@ -69,7 +67,7 @@ function draw_rect(data,x,y,temp_font){
 function draw(text) {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var loop = parseInt(Math.random()*40);
+    var loop = parseInt(Math.random()*10);
     for(var s=0;s<loop;s++){
     	ctx.shadowColor="black";
     	ctx.shadowBlur=parseInt(Math.random()*40);

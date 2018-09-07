@@ -126,7 +126,7 @@ function draw() {
         else{var y = map(AMP, 0, 150, height, 0); }
         
         var plot = w * (i-50);
-        var c = Math.round(map(y, height, height/2, 0, 4));
+        var c = Math.round(map(y, height, height/4, 0, 4));
 
         fill(color(eq_color[c]));
         rect(plot + 10, y, w, height - y);

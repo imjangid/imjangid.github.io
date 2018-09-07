@@ -7,7 +7,7 @@ ctx.imageSmoothingEnabled= true;
 
 
 function color_Linear(ctx) {
-    var grd = ctx.createLinearGradient(0, 0, canvas.width, 0);
+    var grd = ctx.createLinearGradient(0, 0, parseInt(Math.random() * 400),parseInt(Math.random() * 400), parseInt(Math.random() * 400), parseInt(Math.random() * 400));
     var color = get_Color();
     var name = Object.keys(color)[0];
     var value = Object.values(color)[0];
@@ -23,7 +23,7 @@ function color_Linear(ctx) {
 
 
 function color_Radial(ctx) {
-    var grd = ctx.createRadialGradient(parseInt(Math.random() * canvas.width / 2), parseInt(Math.random() * canvas.width / 2), parseInt(Math.random() * 400),parseInt(Math.random() * 400), parseInt(Math.random() * 400), parseInt(Math.random() * 400));
+    var grd = ctx.createRadialGradient(parseInt(Math.random() * canvas.width ), parseInt(Math.random() * canvas.width), parseInt(Math.random() * 400),parseInt(Math.random() * 400), parseInt(Math.random() * 400), parseInt(Math.random() * 400));
     var color = get_Color();
     var name = Object.keys(color)[0];
     var value = Object.values(color)[0];
@@ -35,18 +35,25 @@ function color_Radial(ctx) {
     }
     ctx.fillStyle = grd;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillRect(parseInt(Math.random() *  canvas.width), parseInt(Math.random() *canvas.height), canvas.width, canvas.height);
+    
+
+    
+    
+    
 }
 
 var text;
 
+
 function generate(){
 	text = get_quotes();
-	draw(text);
-	
-}
-    	setInterval(function () {
-    	draw(text);
-    	},500);
+    draw(text);}
+    
+
+
+setInterval(function () {draw(text);},500);
 
 
 
@@ -56,7 +63,7 @@ function draw_rect(data,x,y,temp_font){
 	let wid = ctx.measureText(data).width/2+temp_font;
 	ctx.rect(x-wid,y,ctx.measureText(data).width+2*temp_font,temp_font+10);
 	ctx.fillStyle = "gold";
-	ctx.shadowColor="#777";
+	ctx.shadowColor="black";
 	ctx.fill();
 	ctx.globalAlpha = 1;
 	       
@@ -65,19 +72,19 @@ function draw_rect(data,x,y,temp_font){
 
 
 function draw(text) {
-
+    color_Linear(ctx)
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     var loop = parseInt(Math.random()*10);
     for(var s=0;s<loop;s++){
     	ctx.shadowColor="black";
-    	ctx.shadowBlur=parseInt(Math.random()*40);
-    	color_Radial(ctx);
-    	ctx.shadowBlur = 0;
+        ctx.shadowBlur=parseInt(Math.random()*40);
+        color_Radial(ctx);
+        ctx.shadowBlur = 0;
+        
     }
     let splitter = 9;
     var counter = 0,
-    	already = true;
-        data = "";
+    data = "";
     let word = text.split(" ");
     let text_width = text.length;
     let font_size = canvas.width/100;

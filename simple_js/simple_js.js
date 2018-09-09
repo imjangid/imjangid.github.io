@@ -52,7 +52,7 @@ function mountain(Height, _Width){
 
 function cloud() {
   this.x = random(- windowWidth, windowWidth);
-  this.y = -random(500,1000);
+  this.y = -random(windowHeight,windowHeight - windowHeight/2);
   this.size = random(0.5,5);
   this.shaker = 0;
   this.counter = false;

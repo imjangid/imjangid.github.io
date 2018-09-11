@@ -61,12 +61,13 @@ function mousePressed() {
 }
 
 function draw() {
-  background("#ff6699");
+  clear();
+  background('rgba(0,255,0,0)');
   for (var i = 0; i < data.length; i++) {
     
     var x = map(data[i].x, 0, 1, 0, width);
     var y = map(data[i].y, 0, 1, height, 0);
-    fill(255);
+    fill(44);
     stroke(255);
     ellipse(x, y, 8, 8);
     strokeWeight(0);
